@@ -7,9 +7,10 @@ This script gets 'ip and port'(default) that you search from ZoomEye, which need
 you run this script, your need to provide your account and password registered to ZoomEye to create such a access_token.
 
 Then, input your query(weblogic in this sample), and start page(1) till end page(3). You will get about 30 items save to file.
+</br>
 
 Sample
--------------------------------------------------------
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
  [-] info : access_token file is not exist, please login </br>
  [-] input : username :[your email account]</br>
  [-] input : password :[your password]
@@ -21,7 +22,7 @@ Sample
  115.85.207.196 8008
  110.249.133.214 79
  115.233.221.139 8007
--------------------------------------------------------
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
 ## getLocalZoomEyeIpList.py

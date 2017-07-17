@@ -36,11 +36,10 @@ Then this script will automatically extract 'ip and port'(default) from web page
 
 </br>
 
-### 
-
-author  : evilclay
-datetime: 20160330
-http://www.cnblogs.com/anka9080/p/ZoomEyeAPI.html
-------- Modified by -------
-starnight_cyber@foxmail.com
-Time : 2016.12.8/2017.7.17
+### This Script
+author  : evilclay </br>
+http://www.cnblogs.com/anka9080/p/ZoomEyeAPI.html</br>
+------- Modified by -------</br>
+starnight_cyber@foxmail.com</br>
+Time : 2016.12.8/2017.7.17</br>
+</br>

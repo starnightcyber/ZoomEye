@@ -26,4 +26,10 @@ Then, input your query(weblogic in this sample), and start page(1) till end page
 </br>
 
 ## getLocalZoomEyeIpList.py
-This script exploits more 
+Scripts access to ZoomEye API have some limitations, which you can refer to API Document: https://www.zoomeye.org/api/doc#limitations
+
+What this script does is to extract 'ip and port'(default) from local saved web pages(meaning the search result web pages), 
+take the query 'weblogic' as an example. If you input 'weblogic' as your query, many pages of result returned, and you press
+CTRL + S to save web pages (page 1, 2, ...) to a directory, which you need to provide later.
+
+Then this script will automatically extract 'ip and port'(default) from web pages saved in the directory you provide.

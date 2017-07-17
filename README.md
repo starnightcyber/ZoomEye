@@ -11,17 +11,17 @@ Then, input your query(weblogic in this sample), and start page(1) till end page
 
 ### Sample
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++</br>
- [-] info : access_token file is not exist, please login </br>
- [-] input : username :[your email account]</br>
- [-] input : password :[your password]</br>
- [*] please input search string : weblogic</br>
- [*] please input start page : 1</br>
- [*] please input number of pages you want to retrieve : 3</br>
- https://api.zoomeye.org/host/search?query=weblogic&page=1</br>
- 115.112.99.254 8010</br>
- 115.85.207.196 8008</br>
- 110.249.133.214 79</br>
- 115.233.221.139 8007</br>
+[-] info : access_token file is not exist, please login </br>
+[-] input : username :[your email account]</br>
+[-] input : password :[your password]</br>
+[\*] please input search string : weblogic</br>
+[\*] please input start page : 1</br>
+[\*] please input number of pages you want to retrieve : 3</br>
+https://api.zoomeye.org/host/search?query=weblogic&page=1</br>
+115.112.99.254 8010</br>
+115.85.207.196 8008</br>
+110.249.133.214 79</br>
+115.233.221.139 8007</br>
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++</br>
 </br>
 
@@ -33,3 +33,14 @@ take the query 'weblogic' as an example. If you input 'weblogic' as your query, 
 CTRL + S to save web pages (page 1, 2, ...) to a directory, which you need to provide later.
 
 Then this script will automatically extract 'ip and port'(default) from web pages saved in the directory you provide.
+
+</br>
+
+### 
+
+author  : evilclay
+datetime: 20160330
+http://www.cnblogs.com/anka9080/p/ZoomEyeAPI.html
+------- Modified by -------
+starnight_cyber@foxmail.com
+Time : 2016.12.8/2017.7.17

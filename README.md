@@ -2,7 +2,7 @@
 A script used to get data from ZoomEye, a special search engine to search devices connected to network(https://www.zoomeye.org/)
 just like Shodan(https://www.shodan.io/)
 
->>> getZoomEyeIpList.py
+### getZoomEyeIpList.py
 This script gets 'ip and port'(default) that you search from ZoomEye, which needs to provide a access_token. So, the first time 
 you run this script, your need to provide your account and password registered to ZoomEye to create such a access_token.
 
@@ -24,5 +24,5 @@ https://api.zoomeye.org/host/search?query=weblogic&page=1
 --------------------------------------------------------
 
 
->>>getLocalZoomEyeIpList.py
+### getLocalZoomEyeIpList.py
 This script exploits more 

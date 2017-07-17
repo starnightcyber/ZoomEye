@@ -2,8 +2,9 @@
 # author  : evilclay
 # datetime: 20160330
 # http://www.cnblogs.com/anka9080/p/ZoomEyeAPI.html
-# Modified by : starnight_cyber@foxmail.com
-# Time : 2016.12.8
+# ------- Modified by -------
+# starnight_cyber@foxmail.com
+# Time : 2016.12.8/2017.7.17
 
 import os
 import requests

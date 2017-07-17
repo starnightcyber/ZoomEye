@@ -8,8 +8,7 @@ you run this script, your need to provide your account and password registered t
 
 Then, input your query(weblogic in this sample), and start page(1) till end page(3). You will get about 30 items save to file.
 
-#### Sample
-
+Sample
 -------------------------------------------------------
  [-] info : access_token file is not exist, please login
  [-] input : username :[your email account]

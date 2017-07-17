@@ -10,8 +10,8 @@ Then, input your query(weblogic in this sample), and start page(1) till end page
 
 Sample
 -------------------------------------------------------
- [-] info : access_token file is not exist, please login
- [-] input : username :[your email account]
+ [-] info : access_token file is not exist, please login </br>
+ [-] input : username :[your email account]</br>
  [-] input : password :[your password]
  [*] please input search string : weblogic
  [*] please input start page : 1

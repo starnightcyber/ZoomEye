@@ -1,11 +1,14 @@
 # ZoomEye
+这个脚本用来从ZoomEye API获取相关查询的数据，ZoomEye和Shodan一样可以查询连网设备。</br>
 A script used to get data from ZoomEye, a special search engine to search devices connected to network(https://www.zoomeye.org/)
 just like Shodan(https://www.shodan.io/)
 
 ## getZoomEyeIpList.py
+这个脚本中默认只获取ip和port,可以通过简单的修改来获取想要的数据,访问ZoomEye API需要提供一个access_token, 在运行这个脚本需要使用在ZoomEye注册的用户名和密码，这样会自动生成这个access_token.</br>
 This script gets 'ip and port'(default) that you search from ZoomEye, which needs to provide a access_token. So, the first time 
 you run this script, your need to provide your account and password registered to ZoomEye to create such a access_token.
 
+然后输入你要想查询的东西，比如说例中的weblogic, 查询起始页和页数，程序会自动解析从ZoomEye返回的json数据，将ip和port保存在文本中。</br>
 Then, input your query(weblogic in this sample), and start page(1) till end page(3). You will get about 30 items save to file.
 </br>
 
@@ -25,16 +28,6 @@ https://api.zoomeye.org/host/search?query=weblogic&page=1</br>
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++</br>
 </br>
 
-## getLocalZoomEyeIpList.py
-Scripts access to ZoomEye API have some limitations, which you can refer to API Document: https://www.zoomeye.org/api/doc#limitations
-
-What this script does is to extract 'ip and port'(default) from local saved web pages(meaning the search result web pages), 
-take the query 'weblogic' as an example. If you input 'weblogic' as your query, many pages of result returned, and you press
-CTRL + S to save web pages (page 1, 2, ...) to a directory, which you need to provide later.
-
-Then this script will automatically extract 'ip and port'(default) from web pages saved in the directory you provide.
-
-</br>
 
 ### About This Script
 author  : evilclay </br>

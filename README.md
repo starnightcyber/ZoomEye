@@ -1,5 +1,5 @@
 # ZoomEye
-这个脚本用来从ZoomEye API获取相关查询的数据，ZoomEye和Shodan一样可以查询l连网设备。</br>
+这个脚本用来从ZoomEye API获取相关查询的数据，ZoomEye和Shodan一样可以查询连网设备。</br>
 A script used to get data from ZoomEye, a special search engine to search devices connected to network(https://www.zoomeye.org/)
 just like Shodan(https://www.shodan.io/)
 

@@ -36,3 +36,6 @@ http://www.cnblogs.com/anka9080/p/ZoomEyeAPI.html</br>
 starnight_cyber@foxmail.com</br>
 Time : 2016.12.8/2017.7.17</br>
 </br>
+
+最后，我提供的一个access_token的文件仅用来测试,你可以用自己的账号生成。
+Last but not least, I should not provide this access_token file, it was create by my user account, it is just for your test. 

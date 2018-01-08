@@ -8,6 +8,42 @@ just like Shodan(https://www.shodan.io/)</br>
 zoomeye script update at 2018.1.8 to adapt to new version of zoomeye.
 please use this script first, other scripts remained untested and may be outdated.
 
+### Sample
+    starnight:New_ZoomEye starnight$ python zoomeyeserch.py -t host -q weblogic -f weblogic-result.txt 
+
+         _____                     _____
+        |__  /___   ___  _ __ ___ | ____|   _  ___
+          / // _ \ / _ \| '_ ` _ \|  _|| | | |/ _
+         / /| (_) | (_) | | | | | | |__| |_| |  __/
+        /____\___/ \___/|_| |_| |_|_____\__, |\___|
+                                        |___/
+            
+    {"access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGl0eSI6InN0YXJuaWdodF9jeWJlckBmb3htYWlsLmNvbSIsImlhdCI6MTUxNTM4MDIyMywibmJmIjoxNTE1MzgwMjIzLCJleHAiOjE1MTU0MjM0MjN9.3uDMMEuVCWvL8GSB6ZmUxJk7sZaE7JgNXZL8YnB2D60"}
+    There are 6148 pages to fetch
+    [ 0 / 6148 ] ==> time elapse 0 s ...
+    180.163.112.102:8002
+    180.67.130.71:8002
+    125.76.237.6:8080
+    125.35.11.61:8080
+    125.95.12.62:8080
+    122.56.80.181:443
+    122.216.209.69:443
+    122.226.61.178:443
+    122.13.163.116:443
+    122.96.60.36:443
+    122.224.69.189:443
+    122.155.204.34:443
+    122.112.15.3:443
+    122.224.69.187:443
+    122.224.251.239:443
+    122.155.204.19:443
+    122.155.204.18:443
+    122.224.64.135:443
+    122.144.168.84:443
+    122.155.204.20:443
+
+
+
 ## getZoomEyeIpList.py
 This script gets 'ip and port'(default) that you search from ZoomEye, which needs to provide a access_token. So, the first time 
 you run this script, your need to provide your account and password registered to ZoomEye to create such a access_token.</br>

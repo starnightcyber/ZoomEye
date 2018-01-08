@@ -4,6 +4,10 @@ A script used to get data from ZoomEye, a special search engine to search device
 just like Shodan(https://www.shodan.io/)</br>
 这个脚本用来从ZoomEye API获取相关查询的数据，ZoomEye和Shodan一样可以查询连网设备。</br>
 
+## zoomeyeserch.py
+zoomeye script update at 2018.1.8 to adapt to new version of zoomeye.
+please use this script first, other scripts remained untested and may be outdated.
+
 ## getZoomEyeIpList.py
 This script gets 'ip and port'(default) that you search from ZoomEye, which needs to provide a access_token. So, the first time 
 you run this script, your need to provide your account and password registered to ZoomEye to create such a access_token.</br>

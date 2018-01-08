@@ -69,6 +69,11 @@ https://api.zoomeye.org/host/search?query=weblogic&page=1</br>
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++</br>
 </br>
 
+## extract_local_html.py
+【更新:2018.1.8】
+
+从ZoomEye API获取搜索结果是有限制的，只能获取到前百分之多少，但是如果我们在浏览器端细化查询语句，即更精确的匹配查找，其结果数量可能会少于2000条，而用浏览器最多可以看到100页查询结果，每页20条数据。通过手工保存页面再提取的方式，我们就能将这一细化后的查询结果全部收集起来。
+
 ### About This Script
 author  : evilclay </br>
 http://www.cnblogs.com/anka9080/p/ZoomEyeAPI.html</br>

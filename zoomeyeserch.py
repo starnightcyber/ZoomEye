@@ -11,8 +11,8 @@ class ZoomEye:
 
     def __init__(self):
         self.initParameter()
-        username = 'starnightcyber@foxmail.com'
-        password = 'liu930715'
+        username = 'your-email-address'
+        password = 'your-password'
         self.account = {'username': username,'password': password}
         self.headers = {'Authorization': 'JWT ' + self.getToken()}
 

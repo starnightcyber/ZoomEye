@@ -11,8 +11,8 @@ class ZoomEye:
 
     def __init__(self):
         self.initParameter()
-        username = 'your-email-address'
-        password = 'your-password'
+        username = 'starnightcyber@foxmail.com'
+        password = 'liu930715'
         self.account = {'username': username,'password': password}
         self.headers = {'Authorization': 'JWT ' + self.getToken()}
 
@@ -36,8 +36,7 @@ class ZoomEye:
         pages = self.getPageNum(int(resultDict['total']))
         print 'There are %d pages to fetch' % pages
 
-        userAgent = {'user-agent': 'Mozilla/5.0（iPad; U; CPU OS 3_2_1 like Mac OS X; en-us）AppleWebKit/\
-            531.21.10（KHTML, like Gecko）Mobile/7B405'}
+        userAgent = {'user-agent': 'Mozilla/5.0 (Windows NT 6.1; rv:30.0) Gecko/20100101 Firefox/30.0'}
         self.headers['user-agent'] = userAgent
 
         start = time.time()

@@ -4,9 +4,12 @@ A script used to get data from ZoomEye, a special search engine to search device
 just like Shodan(https://www.shodan.io/)</br>
 这个脚本用来从ZoomEye API获取相关查询的数据，ZoomEye和Shodan一样可以查询连网设备。</br>
 
-## zoomeyeserch.py
+## zoomeyeserch.py (python 2.7)
 zoomeye script update at 2018.1.8 to adapt to new version of zoomeye.
+
 please use this script first, other scripts remained untested and may be outdated.
+
+if you find the script not works fine, please try to use getZoomEyeIpList.py and tell me, your system version.
 
 ### Sample
     starnight:New_ZoomEye starnight$ python zoomeyeserch.py -t host -q weblogic -f weblogic-result.txt 
@@ -44,7 +47,7 @@ please use this script first, other scripts remained untested and may be outdate
 
 
 
-## getZoomEyeIpList.py
+## getZoomEyeIpList.py(python 2.7)
 This script gets 'ip and port'(default) that you search from ZoomEye, which needs to provide a access_token. So, the first time 
 you run this script, your need to provide your account and password registered to ZoomEye to create such a access_token.</br>
 这个脚本中默认只获取ip和port,可以通过简单的修改来获取想要的数据,访问ZoomEye API需要提供一个access_token, 在运行这个脚本需要使用在ZoomEye注册的用户名和密码，这样会自动生成这个access_token.</br>

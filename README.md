@@ -4,51 +4,9 @@ A script used to get data from ZoomEye, a special search engine to search device
 just like Shodan(https://www.shodan.io/)</br>
 这个脚本用来从ZoomEye API获取相关查询的数据，ZoomEye和Shodan一样可以查询连网设备。</br>
 
-## zoomeyeserch.py (python 2.7)
-zoomeye script update at 2018.1.8 to adapt to new version of zoomeye.
-
-please use this script first, other scripts remained untested and may be outdated.
-
-if you find the script not works fine, please try to use getZoomEyeIpList.py and tell me, your system version.
-
-### Sample
-    starnight:New_ZoomEye starnight$ python zoomeyeserch.py -t host -q weblogic -f weblogic-result.txt 
-
-         _____                     _____
-        |__  /___   ___  _ __ ___ | ____|   _  ___
-          / // _ \ / _ \| '_ ` _ \|  _|| | | |/ _
-         / /| (_) | (_) | | | | | | |__| |_| |  __/
-        /____\___/ \___/|_| |_| |_|_____\__, |\___|
-                                        |___/
-            
-    {"access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGl0eSI6InN0YXJuaWdodF9jeWJlckBmb3htYWlsLmNvbSIsImlhdCI6MTUxNTM4MDIyMywibmJmIjoxNTE1MzgwMjIzLCJleHAiOjE1MTU0MjM0MjN9.3uDMMEuVCWvL8GSB6ZmUxJk7sZaE7JgNXZL8YnB2D60"}
-    There are 6148 pages to fetch
-    [ 0 / 6148 ] ==> time elapse 0 s ...
-    180.163.112.102:8002
-    180.67.130.71:8002
-    125.76.237.6:8080
-    125.35.11.61:8080
-    125.95.12.62:8080
-    122.56.80.181:443
-    122.216.209.69:443
-    122.226.61.178:443
-    122.13.163.116:443
-    122.96.60.36:443
-    122.224.69.189:443
-    122.155.204.34:443
-    122.112.15.3:443
-    122.224.69.187:443
-    122.224.251.239:443
-    122.155.204.19:443
-    122.155.204.18:443
-    122.224.64.135:443
-    122.144.168.84:443
-    122.155.204.20:443
-
-
 
 ## getZoomEyeIpList.py(python 2.7)
-This script gets 'ip and port'(default) that you search from ZoomEye, which needs to provide a access_token. So, the first time 
+This script gets 'ip and port'(default) that you search from ZoomEye, which needs to provide a access_token. So, the first time
 you run this script, your need to provide your account and password registered to ZoomEye to create such a access_token.</br>
 这个脚本中默认只获取ip和port,可以通过简单的修改来获取想要的数据,访问ZoomEye API需要提供一个access_token, 在运行这个脚本需要使用在ZoomEye注册的用户名和密码，这样会自动生成这个access_token.</br>
 
@@ -57,20 +15,35 @@ Then, input your query(weblogic in this sample), and start page(1) till end page
 </br>
 
 ### Sample
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++</br>
-[-] info : access_token file is not exist, please login </br>
-[-] input : username :[your email account]</br>
-[-] input : password :[your password]</br>
-[\*] please input search string : weblogic</br>
-[\*] please input start page : 1</br>
-[\*] please input number of pages you want to retrieve : 3</br>
-https://api.zoomeye.org/host/search?query=weblogic&page=1</br>
-115.112.99.254 8010</br>
-115.85.207.196 8008</br>
-110.249.133.214 79</br>
-115.233.221.139 8007</br>
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++</br>
-</br>
+      starnight:ZoomEye starnight$ python getZoomEyeIpList.py
+      [-] info : access_token file is not exist, please login
+      [-] input : username :zl15@foxmail.com
+      [-] input : password :liu120808
+      [*] please input search string : weblogic
+      [*] please input start page : 1
+      [*] please input number of pages you want to retrieve : 3
+      https://api.zoomeye.org/host/search?query=weblogic&page=1
+      73.248.137.190 : 7001
+      122.115.55.11 : 8000
+      85.133.173.4 : 9981
+      85.133.173.4 : 33
+      59.44.219.156 : 8088
+      59.44.25.90 : 8088
+      59.151.126.80 : 8088
+      59.37.62.178 : 8088
+      59.56.27.32 : 8088
+      59.33.252.254 : 8088
+      85.133.173.4 : 40000
+      66.161.251.178 : 8081
+      66.96.203.251 : 8081
+      66.161.251.186 : 8081
+      66.161.251.183 : 8081
+      151.80.118.234 : 7002
+      114.251.203.84 : 32770
+      114.251.203.84 : 9981
+      128.184.32.124 : 80
+      128.136.195.242 : 80
+      [-] info : count 10
 
 ## extract_local_html.py
 【更新:2018.1.8】

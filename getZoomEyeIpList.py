@@ -113,9 +113,9 @@ def apiTest():
             # print r_decoded
             # print r_decoded['total']
             for x in r_decoded['matches']:
-                print x['ip'], x['portinfo']['port']
+                print x['ip'],':',x['portinfo']['port']
                 ip_list.append(x['ip'])
-                ip_port_list.append(x['ip'] + ', ' + str(x['portinfo']['port']))
+                ip_port_list.append(x['ip'] + ':' + str(x['portinfo']['port']))
             print '[-] info : count ' + str(index * 10)
 
         except Exception, e:

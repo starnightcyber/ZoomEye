@@ -6,6 +6,7 @@ just like Shodan(https://www.shodan.io/)</br>
 
 
 ## getZoomEyeIpList.py(python 2.7)
+【更新:2018.4.11】
 This script gets 'ip and port'(default) that you search from ZoomEye, which needs to provide a access_token. So, the first time
 you run this script, your need to provide your account and password registered to ZoomEye to create such a access_token.</br>
 这个脚本中默认只获取ip和port,可以通过简单的修改来获取想要的数据,访问ZoomEye API需要提供一个access_token, 在运行这个脚本需要使用在ZoomEye注册的用户名和密码，这样会自动生成这个access_token.</br>
@@ -15,35 +16,57 @@ Then, input your query(weblogic in this sample), and start page(1) till end page
 </br>
 
 ### Sample
-      starnight:ZoomEye starnight$ python getZoomEyeIpList.py
-      [-] info : access_token file is not exist, please login
-      [-] input : username :zl15@foxmail.com
-      [-] input : password :liu120808
-      [*] please input search string : weblogic
-      [*] please input start page : 1
-      [*] please input number of pages you want to retrieve : 3
-      https://api.zoomeye.org/host/search?query=weblogic&page=1
-      73.248.137.190 : 7001
-      122.115.55.11 : 8000
-      85.133.173.4 : 9981
-      85.133.173.4 : 33
-      59.44.219.156 : 8088
-      59.44.25.90 : 8088
-      59.151.126.80 : 8088
-      59.37.62.178 : 8088
-      59.56.27.32 : 8088
-      59.33.252.254 : 8088
-      85.133.173.4 : 40000
-      66.161.251.178 : 8081
-      66.96.203.251 : 8081
-      66.161.251.186 : 8081
-      66.161.251.183 : 8081
-      151.80.118.234 : 7002
-      114.251.203.84 : 32770
-      114.251.203.84 : 9981
-      128.184.32.124 : 80
-      128.136.195.242 : 80
-      [-] info : count 10
+    starnight:ZoomEye starnight$ python getZoomEyeIpList.py
+    [-] info : access_token file is not exist, please login
+    [-] input : username :your-email-address
+    [-] input : password :your-password
+    [*] please input search string : weblogic
+    [*] please input start page : 10
+    [*] please input number of pages you want to retrieve : 2
+    index : 0 - page : 10
+    https://api.zoomeye.org/host/search?query=weblogic&page=10
+    113.200.157.206 : 80
+    113.107.226.37 : 80
+    113.108.173.185 : 80
+    113.196.174.27 : 80
+    113.140.88.172 : 80
+    113.23.243.185 : 80
+    113.140.88.174 : 80
+    113.59.34.5 : 80
+    113.108.8.186 : 80
+    113.140.1.137 : 80
+    113.140.1.140 : 80
+    113.107.215.24 : 80
+    113.161.131.53 : 80
+    113.107.215.20 : 80
+    113.200.157.199 : 80
+    113.23.157.137 : 80
+    113.185.0.51 : 80
+    113.107.215.29 : 80
+    113.107.226.38 : 80
+    113.185.0.232 : 80
+    index : 1 - page : 11
+    https://api.zoomeye.org/host/search?query=weblogic&page=11
+    113.200.157.210 : 80
+    113.200.115.207 : 80
+    113.108.173.47 : 80
+    113.161.213.208 : 80
+    113.108.8.198 : 80
+    113.204.231.34 : 80
+    113.204.231.39 : 80
+    113.200.157.216 : 80
+    113.23.157.147 : 80
+    113.107.54.27 : 80
+    113.204.206.21 : 80
+    113.185.0.60 : 80
+    113.204.231.35 : 80
+    113.204.231.38 : 80
+    113.52.45.85 : 80
+    113.240.252.22 : 80
+    113.185.0.94 : 80
+    113.207.5.53 : 80
+    113.196.174.87 : 80
+    113.107.215.26 : 80
 
 ## extract_local_html.py
 【更新:2018.1.8】

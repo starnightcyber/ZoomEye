@@ -16,6 +16,11 @@ ip_list = []
 ip_port_list = []
 query = ''
 
+headers = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:47.0) Gecko/20100101 Firefox/47.0'
+}
+
+
 def login():
     # 输入用户名密码 进行登录操作
     user = raw_input('[-] input : username :')
@@ -28,7 +33,7 @@ def login():
     # dumps 将 python 对象转换成 json 字符串
     data_encoded = json.dumps(data)
     try:
-        r = requests.post(url='https://api.zoomeye.org/user/login', data=data_encoded)
+        r = requests.post(url='https://api.zoomeye.org/user/login', data=data_encoded, headers=headers)
         # loads() 将 json 字符串转换成 python 对象
         r_decoded = json.loads(r.text)
         global access_token
@@ -79,6 +84,7 @@ def zoomeye():
     # 将 token 格式化并添加到 HTTP Header 中
     headers = {
         'Authorization': 'JWT ' + access_token,
+        'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:47.0) Gecko/20100101 Firefox/47.0'
     }
 
     # 要搜索的字符串  query = 'port:80 weblogic country:China'

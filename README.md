@@ -6,6 +6,11 @@ just like Shodan(https://www.shodan.io/)</br>
 
 
 ## getZoomEyeIpList.py(python 2.7)
+【更新:2018.11.2】
+ZoomEye新版本会检查是否是爬虫，主要是通过检查请求的信息是否携带User-Agent
+
+已在请求的headers中添加User-Agent，经测试，可正常工作.
+
 【更新:2018.4.11】
 This script gets 'ip and port'(default) that you search from ZoomEye, which needs to provide a access_token. So, the first time
 you run this script, your need to provide your account and password registered to ZoomEye to create such a access_token.</br>

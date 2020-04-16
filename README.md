@@ -1,5 +1,7 @@
 # ZoomEye
-A script used to get data from ZoomEye
+A script used to get data from ZoomEye, moved to Python3.
+
+Legacy for Python2, please refer [ZoomEye Python2 Version](https://github.com/starnightcyber/ZoomEye/releases/tag/ZoomEye_py2)
 
 ## Sample
 

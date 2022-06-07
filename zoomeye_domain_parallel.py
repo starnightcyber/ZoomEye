@@ -98,7 +98,7 @@ def save_2_file(domain):
 
 def run_batch():
     print('[*][run_batch] ...')
-    search_domains = ['qq.com', 'baidu.com']
+    search_domains = ['baidu.com']
     index = 0
     for domain in search_domains:
         index += 1
